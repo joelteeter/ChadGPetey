@@ -53,7 +53,7 @@ function add_chatgpt_js_plugin_page() {
                     jQuery.ajax({
                         type: 'get',
                         dataType: 'json',
-                        url: "https://api.openverse.engineering/v1/images/?q=%22"+search_term+"%22",
+                        url: "https://api.openverse.org/v1/images/?q=%22"+search_term+"%22",
                         success: function(response) {
                             console.log('the creative commons request was successful');
                             var images = [];
